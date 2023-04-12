@@ -3,10 +3,9 @@ const {
     GatewayIntentBits,
     SelectMenuOptionBuilder,
 } = require('discord.js');
-import dotenv from 'dotenv';
 const toml = require('toml');
 const fs = require('fs');
-dotenv.config();
+require('dotenv').config();
 const config = toml.parse(fs.readFileSync('./discord.toml', 'utf8'));
 
 console.log(process.env.token);
