@@ -1,19 +1,21 @@
-# まさ遺影Bot
+# まさ遺影 Bot
 
 ## 使い方
 
 ### 初回
 
-`.env.sample`を参考に`.env`にDiscordのトークンを入力する。
+`.env.sample`を参考に`.env`に Discord のトークンを入力する。
 
 ```
 docker compose run --rm app /bin/bash
 ```
+
 でコンテナに入る。
 
 ```
 npm i
 ```
+
 でパッケージをインストールして、コンテナを抜ける。
 
 ### 起動
@@ -34,5 +36,5 @@ docker compose up -d
 
 ```yml
 # app:
-    restart: always
+restart: always
 ```
