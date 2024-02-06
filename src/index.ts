@@ -8,7 +8,11 @@ if (Bun.env.TOKEN === undefined) {
 }
 
 const client = new Client({
-  intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent],
+  intents: [
+    GatewayIntentBits.Guilds, 
+    GatewayIntentBits.GuildMessages, 
+    GatewayIntentBits.MessageContent
+  ],
 });
 
 client.on(Events.ClientReady, () => {
@@ -17,7 +21,7 @@ client.on(Events.ClientReady, () => {
 });
 
 client.on(Events.MessageCreate, (message) => {
-  if(message.author.bot) {
+  if (message.author.bot) {
     return;
   }
   const replyMessage: string = 'https://raw.buntin.xyz/masaiei.png';
