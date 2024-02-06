@@ -1,40 +1,15 @@
-# まさ遺影 Bot
+# masa-bot
 
-## 使い方
+To install dependencies:
 
-### 初回
-
-`.env.sample`を参考に`.env`に Discord のトークンを入力する。
-
-```
-docker compose run --rm app /bin/bash
+```bash
+bun install
 ```
 
-でコンテナに入る。
+To run:
 
-```
-npm i
-```
-
-でパッケージをインストールして、コンテナを抜ける。
-
-### 起動
-
-```
-docker compose up
+```bash
+bun run src/index.ts
 ```
 
-で起動する。
-
-バックグラウンドで起動したい場合はこちら。
-
-```
-docker compose up -d
-```
-
-コンテナの自動起動をしたい場合は、`docker-compose.yml`に以下を追加する。
-
-```yml
-# app:
-restart: always
-```
+This project was created using `bun init` in bun v1.0.26. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
